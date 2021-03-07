@@ -1,13 +1,16 @@
 * { margin: 0; }
+#home, #about, #portfolio, footer {
+    min-width: 1000px;    
+}
 
-body {
+body {    
     display: flex;
     flex-direction: column;
 }
 
 header {
-    position: fixed;
     width: 100%;
+    position: fixed;    
     background: #3c3838;
     z-index: 1;
 }
@@ -15,7 +18,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     background: rgb(168, 141, 141);
-    padding: 15px;
+    padding: 10px 0;    
 }
 nav a {
     color: #3c3838;
@@ -23,18 +26,20 @@ nav a {
     text-decoration: none;
     margin: 0 25px;
     border: 1px solid black;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
 }
 nav a:hover {
     background: blanchedalmond;
 }
 
-#home {
+#home {    
     background-image: url("image/home_page.png");
     background-repeat: no-repeat;
     background-size: 100%;
     height: 950px;
+    max-height: 950px;
+    min-height: 950px;        
 }
 h1 {
     position: relative;
@@ -48,7 +53,7 @@ h1 {
     background-color: #817d7d;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;    
+    grid-template-rows: auto auto auto;
 }
 #about img {
     width: 250px;
@@ -69,7 +74,6 @@ h1 {
     padding: 20px;
     width: 350px;
     font-size: 20px;
-
 }
 .skills {
     margin: 30px 0;
@@ -79,7 +83,6 @@ h1 {
     list-style: inside;
     font-size: 20px;
 }
-
 .contacts a {
     color: black;    
 }
@@ -92,7 +95,11 @@ h1 {
 }
 #portfolio h2 {
     background: cornflowerblue;
-    padding: 10px;
+    padding: 10px 0;
+}
+#portfolio a {
+    text-decoration: none;
+    color: black;
 }
 .project {
     display: flex;
@@ -101,8 +108,7 @@ h1 {
     padding: 10px;    
     background: rgb(155, 143, 126);
     width: 800px;
-    margin: 15px 50px 0;
-    
+    margin: 15px 50px 0;    
 }
 .project p {
     margin: 20px;
