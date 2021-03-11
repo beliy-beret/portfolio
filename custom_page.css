@@ -28,7 +28,8 @@ nav a:hover {
 
 #home {
     display: flex;    
-    background: url("image/home_page.png") no-repeat center/100% black;
+    background: url("image/home_page.png") no-repeat center;
+    background-size: cover;
     min-height: 950px;                
 }
 h1 {    
