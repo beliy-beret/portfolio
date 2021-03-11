@@ -106,6 +106,9 @@ h1 {
 .project p {
     margin: 20px;
 }
+.project img {
+    width: 35%;
+}
 
 footer {    
     background: #3c3838;
