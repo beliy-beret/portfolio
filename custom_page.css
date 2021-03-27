@@ -30,7 +30,7 @@ nav a:hover {
     display: flex;    
     background: url("image/home_page.png") no-repeat center;
     background-size: cover;
-    min-height: 950px;                
+    height: 100vh;                
 }
 h1 {    
     font-size: 60px;
@@ -44,6 +44,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
+    height: 100vh;
 }
 #about img {
     width: 300px;
