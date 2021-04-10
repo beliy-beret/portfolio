@@ -3,72 +3,72 @@
 <head>
     <meta charset="UTF-8">        
     <title>my_page</title>
-    <link rel="stylesheet" href="custom_page.css">
+    <link rel="stylesheet" href="./css/portfolio_page.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="#home"> Home </a>
-            <a href="#about"> About </a>            
-            <a href="#portfolio"> Portfolio </a>
+<body class="portfolio-page">
+    <header class="portfolio-page__header">
+        <nav class="menu">
+            <a class="menu__link" href="#home"> Home </a>
+            <a class="menu__link" href="#about"> About </a>            
+            <a class="menu__link" href="#projects"> My Projects </a>
         </nav>
     </header>
-    <main>
-        <section id="home">
-            <h1> Skorobogatov Stanislav,<br/>Junior Front-End developer. </h1>
+    <main class="portfolio-page__body">
+        <section id="home" class="home">
+            <h1 class="home__title"> Skorobogatov Stanislav,<br/>Junior Front-End developer. </h1>
         </section>
-        <section id="about">
-            <div class="avatar">
+        <section id="about" class="about">
+            <div class="about__avatar">
                 <img alt="avatar" src="image/ava.jpg">
             </div>
-            <div class="biography">
-                <h2> About me </h2>
-                <p class="bio">
+            <div class="about__biography">
+                <h2 class="biography__title"> About me </h2>
+                <p class="biography__text">
                     Hello ! I am Stanislav. I want to become a good Front-End developer.
                     IT sphere is new to me, but I am learning fast. The basics of java-script I studied on <a href="https://ru.hexlet.io">Hexlet</a>.
                     Now I'm studying React. For me, programming it is hobby, but I hope that in the near future it will bring me income.
                     I like to study new technologies and apply them in practice.
                 </p>
-                <div class="contacts">
-                    <h2>Contacts:</h2>
-                    <ul>
-                        <li><a href="https://vk.com/id81696211">Vkontakte</a></li>
-                        <li><a href="mailto:beliy_beret@mail.ru">beliy_beret@mail.ru</a></li>
-                        <li><a href="https://github.com/beliy-beret">Git Hub</a></li>
-                        <li><a href="https://t.me/StanislavSkor">My Telegram </a></li>
-                        <li>whatsapp: +7(964) 891 11 97</li>
-                    </ul>
-                </div>
-                <div class="skills">
-                    <p><b>My skills:</b> HTML, CSS, JS, React</p>
-                </div>
-            </div>            
-        </section>                
-        <section id="portfolio">
-            <h2> Portfolio </h2>            
-            <a href="https://beliy-beret.github.io/Calculator" target="_blank">
+            </div>
+            <div class="about__contacts">
+                <h2 class="contacts__title">Contacts:</h2>
+                <ul class="contacts-list">
+                    <li><a class="contacts__link" href="https://vk.com/id81696211">Vkontakte</a></li>
+                    <li><a class="contacts__link" href="mailto:beliy_beret@mail.ru">beliy_beret@mail.ru</a></li>
+                    <li><a class="contacts__link" href="https://github.com/beliy-beret">Git Hub</a></li>
+                    <li><a class="contacts__link" href="https://t.me/StanislavSkor">My Telegram </a></li>
+                    <li>whatsapp: +7(964) 891-11-97</li>
+                </ul>
+            </div>
+            <div class="about__skills">
+                <p><b>My skills:</b> HTML, CSS, JS, React</p>
+            </div>                        
+        </section>                       
+        <section id="projects" class="projects">
+            <h2 class="projects__title"> My Projects </h2>            
+            <a class="projects__link" href="https://beliy-beret.github.io/Calculator" target="_blank">
                 <div class="project">
-                     <img alt="Calculator" src="./image/calculator.jpg">
-                     <p> Calculator  </p>
+                     <img class="project__image" alt="Calculator" src="./image/calculator.jpg">
+                     <p class="project__descrirtion"> Calculator  </p>
                 </div>
             </a>
-            <a href="https://beliy-beret.github.io/Search_movies" target="_blank">
+            <a class="projects__link" href="https://beliy-beret.github.io/Search_movies" target="_blank">
                 <div class="project">
-                     <img alt="Calculator" src="./image/Search.jpg">
-                     <p> Search_movies </p>
+                     <img class="project__image" alt="Calculator" src="./image/Search.jpg">
+                     <p class="project__descrirtion"> Search_movies </p>
                 </div>
             </a>
-            <a href="https://beliy-beret.github.io/React_to_do_list" target="_blank">
+            <a class="projects__link" href="https://beliy-beret.github.io/React_to_do_list" target="_blank">
                 <div class="project">
-                     <img alt="ToDo list" src="./image/ToDo.jpg">
-                     <p> React TODO list </p>
+                     <img class="project__image" alt="ToDo list" src="./image/ToDo.jpg">
+                     <p class="project__descrirtion"> React TODO list </p>
                 </div>
             </a>
         </section>
     </main>
-    <footer>
-        <p> <b>Skorobogatov Stanislav.</b></p>
-        <p> <b>I hope for our cooperation !</b></p>
+    <footer class="portfolio-page__footer">
+        <p class="footer__paragraph"> <b>Skorobogatov Stanislav.</b></p>
+        <p class="footer__paragraph"> <b>I hope for our cooperation !</b></p>
     </footer>
 </body>
 </html>
