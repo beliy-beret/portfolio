@@ -128,7 +128,7 @@
   width: 35%;
 }
 .portfolio-page__body .projects .project__description {
-  margin: 20px;
+  padding: 15px;
 }
 .portfolio-page__footer {
   grid-area: footer;
