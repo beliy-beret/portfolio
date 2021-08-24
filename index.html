@@ -1,129 +1,172 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">        
-    <title>my_page</title>
-    <link rel="stylesheet" href="./css/portfolio_page.css">
-</head>
-<body class="portfolio-page">
-    <header class="portfolio-page__header">
-        <nav class="menu">
-            <a class="menu__link" href="#home"> Стартовая </a>
-            <a class="menu__link" href="#about"> Обо мне </a>            
-            <a class="menu__link" href="#projects"> Мои работы </a>
-        </nav>
-    </header>
-    <main class="portfolio-page__body">
-        <section id="home" class="home">
-            <div class="home__greeting">
-                <img alt="PC picture" src="./image/Front-end.jpg" />
-                <h1 class="title"> Скоробогатов Станислав,<br/>Junior Front-End developer. </h1>
-            </div>
-            <div class="home__technologies">                
-                <ul>
-                    <li>
-                        <div class="logo-wrapper">
-                            <img alt="HTML logo" src="./image/HTML5_logo.svg" />
-                        </div>
-                        <p>HTML</p></li>
-                    <li>
-                        <div class="logo-wrapper">
-                            <img alt="CSS logo" src="./image/Sass_Logo_Color.svg"/>
-                        </div>
-                        <p>CSS, SCSS</p>
-                    </li>
-                    <li>
-                        <div class="logo-wrapper">
-                            <img alt="JS logo" src="./image/javascript-seeklogo.com.svg" />
-                        </div>
-                        <p>JS</p>
-                    </li>
-                    <li>
-                        <div class="logo-wrapper">
-                            <img alt="React logo" src="./image/react.svg"/>
-                        </div>
-                        <p>React</p>
-                    </li>
-                    <li>
-                        <div class="logo-wrapper">
-                            <img alt="Redux logo" src="./image/redux.svg" />
-                        </div>
-                        <p>Redux</p>
-                    </li>
-                </ul>
-            </div>            
-        </section>
-        <section id="about" class="about">
-            <div class="about__avatar">
-                <div class="avatar-wrapper">
-                    <img alt="avatar" src="image/ava2.jpeg">
-                </div>                
-            </div>
-            <div class="about__biography">
-                <h2 class="biography__title"> Немного обо мне </h2>
-                <p class="biography__text">
-                    Привет ! Меня зовут Станислав. Я хочу стать Front-End разработчиком.
-                    IT-сфера для меня новая, но я быстро учусь. Основы java-script я изучал на <a href="https://ru.hexlet.io"> Hexlet </a>.
-                    Сейчас изучаю React и Redux. Для меня программирование - это хобби, но я надеюсь, что в ближайшем будущем это будут моей основной деятельностью.
-                    Мне нравится изучать новые технологии и применять их на практике.
-                </p>
-            </div>
-            <div class="about__contacts">
-                <h2 class="contacts__title">Контакты:</h2>
-                <ul class="contacts-list">
-                    <li><a class="contacts__link" href="https://vk.com/id81696211">Vkontakte</a></li>
-                    <li><a class="contacts__link" href="mailto:beliy_beret@mail.ru">beliy_beret@mail.ru</a></li>
-                    <li><a class="contacts__link" href="https://github.com/beliy-beret">Git Hub</a></li>
-                    <li><a class="contacts__link" href="https://t.me/StanislavSkor">My Telegram </a></li>
-                    <li>whatsapp: +7(964) 891-11-97</li>
-                </ul>
-            </div>                                    
-        </section>                       
-        <section id="projects" class="projects">
-            <h2 class="projects__title"> Мои работы: </h2>            
-            <a class="projects__link" href="https://beliy-beret.github.io/Calculator" target="_blank">
-                <div class="project">
-                     <img class="project__image" alt="Calculator" src="./image/calculator.jpg">
-                     <p class="project__description"> Calculator  </p>
-                </div>
-            </a>
-            <a class="projects__link" href="https://beliy-beret.github.io/Search_movies" target="_blank">
-                <div class="project">
-                     <img class="project__image" alt="movies poster" src="./image/Search.jpg">
-                     <p class="project__description"> Search_movies </p>
-                </div>
-            </a>
-            <a class="projects__link" href="https://beliy-beret.github.io/DAO_Tech-test" target="_blank">
-                <div class="project">
-                     <img class="project__image" alt="ToDo list" src="./image/react_TODO.png">
-                     <p class="project__description"> To Do лист на React с дополнительными опциями в виде фильтрации
-                        и валидации. В качестве стейт менеджера использутся Redux. </p>
-                </div>
-            </a>
-            <a class="projects__link" href="https://beliy-beret.github.io/x-lab" target="_blank">
-                <div class="project">
-                     <img class="project__image" alt="ToDo list" src="./image/x-lab.png">
-                     <p class="project__description"> Одно из тестовых заданий. Реализована форма для авториpации.
-                        Список пользователей отсортирован по ID. Реализован живой поиск пользователя по его "username".<br>
-                        username: cool_user<br>
-                        password: InsanePassword </p>
-                </div>
-            </a>
-            <a class="projects__link" href="https://beliy-beret.github.io/Weather" target="_blank">
-                <div class="project">
-                     <img class="project__image" alt="Weather" src="./image/weather.png">
-                     <p class="project__description"> Приложение написаное на React.
-                          Показывает текущую погоду в выбранном вами городе.
-                          Город можно выбирать любой, название можно писать на русском и английском языках.
-                          Есть возможность переключения единицы измерения. В качестве стейт менеджера использован Redux.
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>My profile page</title>
+        <link rel="stylesheet" href="./css/portfolio_page-dist.css">
+    </head>
+    <body>
+        <main>
+            <div class="wrapper">
+                <section class="about">
+                    <div class="about__image">
+                        <img src="./image/ava2.jpeg" alt="my foto">
+                    </div>            
+                    <h1 class="about__title">
+                        Skorobogatov Stanislav,<br>
+                        Junior Front-End developer.</h1>
+                    <p class="about__description">
+                        Hi! I'm fond of front-end development.
+                        The IT is new to me, but I am a fast learner.
+                        I enjoy learning new technologies and putting them into practice.
+                        I worked in different fields, was a salesman, storekeeper, civil servant, lawyer.
+                        Now I am a support center operator in MTS. I devote all my free time to study.
                     </p>
-                </div>
-            </a>
-        </section>
-    </main>
-    <footer class="portfolio-page__footer">
-        <p class="footer__paragraph"> <b> Скоробогатов Станислав. </b></p>
-        <p class="footer__paragraph"> <b> Надеюсь на продуктивное сотрудничество ! </b></p>
-    </footer>
-</body>
+                </section>
+                <section class="skills">
+                    <h2 class="skills__title">My skill stack:</h2>
+                    <div class="skills__item">
+                        <img src="./image/HTML5_logo.svg" alt="HTML"><span>HTML</span>
+                    </div>
+                    <div class="skills__item">
+                        <img src="./image/Sass_Logo.svg" alt="CSS"><span>CSS/SCSS</span>
+                    </div>
+                    <div class="skills__item">
+                        <img src="./image/javascript-logo.svg" alt="JS"><span>JavaScript</span>
+                    </div>
+                    <div class="skills__item">
+                        <img src="./image/react.svg" alt="React"><span>React</span>
+                    </div>
+                    <div class="skills__item">
+                        <img src="./image/redux.svg" alt="Redux"><span>Redux</span>
+                    </div>
+                    <div class="skills__item">
+                        <img src="./image/webpack-logo.com.svg" alt="Webpack"><span>Webpack</span>
+                    </div>
+                    <div class="skills__item">
+                        <img src="./image/pug-logo.com.svg" alt="Pug"><span>Pug</span>
+                    </div>
+                </section>
+                <section class="contacts">
+                    <h2 class="contacts__title">My contacts:</h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__list-item"><a href="https://vk.com/id81696211" target="_blank">Vkontakte</a></li>
+                        <li class="contacts__list-item"><a href="mailto:beliy_beret@mail.ru">beliy_beret@mail.ru</a></li>
+                        <li class="contacts__list-item"><a href="https://github.com/beliy-beret" target="_blank">Git Hub</a></li>
+                        <li class="contacts__list-item"><a href="https://t.me/StanislavSkor" target="_blank">My Telegram </a></li>
+                        <li class="contacts__list-item">whatsapp/phone: +7(964) 891-11-97</li>
+                    </ul>
+                </section>
+                <section class="projects">
+                    <h2 class="projects__title">My projects:</h2>
+                    <div class="projects__wrapper">
+                        <div class="projects__item">
+                            <div class="projects__item-image">
+                                <a href="https://beliy-beret.github.io/Calculator" target="_blank">
+                                    <img alt="Calculator" src="./image/calculator.jpg">
+                                </a>
+                            </div>                                            
+                            <h3 class="projects__item-title">
+                                <a href="https://beliy-beret.github.io/Calculator" target="_blank">
+                                    Calculator
+                                </a>
+                            </h3>
+                            <div class="projects__item-description">
+                                <p>
+                                    The calculator accepts an expression string ("3 - 2" or "V + VI").
+                                    The following mathematical operations can be performed: "+", "-", "/", "*".
+                                    Arguments can be both Arabic and Roman numerals ranging from "0" to "10" inclusive,
+                                    arguments must be integers. Only one mathematical operation can be performed at a time.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projects__item">
+                            <div class="projects__item-image">
+                                <a href="https://beliy-beret.github.io/Search_movies" target="_blank">
+                                    <img alt="movies poster" src="./image/Search.jpg">
+                                </a>
+                            </div>                
+                            <h3 class="projects__item-title">
+                                <a href="https://beliy-beret.github.io/Search_movies" target="_blank">
+                                    Search movies
+                                </a>
+                            </h3>
+                            <div class="projects__item-description">
+                                <p>
+                                    React app.
+                                </p>                    
+                            </div>  
+                        </div>
+                        <div class="projects__item">
+                            <div class="projects__item-image">
+                                <a href="https://beliy-beret.github.io/DAO_Tech-test" target="_blank">
+                                    <img alt="ToDo list" src="./image/react_TODO.png">
+                                </a>
+                            </div>                
+                            <h3 class="projects__item-title">
+                                <a href="https://beliy-beret.github.io/DAO_Tech-test" target="_blank">
+                                    To Do list
+                                </a>    
+                            </h3>
+                            <div class="projects__item-description">                    
+                                <p>
+                                    React app with additional options in the form of filter
+                                    and validation. State manager - Redux.
+                                </p>                    
+                            </div>  
+                        </div>
+                        <div class="projects__item">
+                            <div class="projects__item-image">
+                                <a href="https://beliy-beret.github.io/x-lab" target="_blank">
+                                    <img alt="Form" src="./image/x-lab.png">
+                                </a>
+                            </div>                
+                            <h3 class="projects__item-title">
+                                <a href="https://beliy-beret.github.io/x-lab" target="_blank">
+                                    React authorization form.
+                                </a>    
+                            </h3>
+                            <div class="projects__item-description">
+                                <p>
+                                    username: cool_user<br>
+                                    password: InsanePassword
+                                </p>
+                                <ul>Options:
+                                    <li>filter by ID;</li>
+                                    <li>live search by "username";</li>
+                                </ul>                    
+                            </div>  
+                        </div>
+                        <div class="projects__item">
+                            <div class="projects__item-image">
+                                <a href="https://beliy-beret.github.io/Weather" target="_blank">
+                                    <img alt="Weather" src="./image/weather.png">
+                                </a>
+                            </div>                
+                            <h3 class="projects__item-title">
+                                <a href="https://beliy-beret.github.io/Weather" target="_blank">
+                                    Weather
+                                </a>    
+                            </h3>
+                            <div class="projects__item-description">
+                                <p>
+                                    React SPA. Shows the current weather in the city you selected.
+                                    The city name can be written in Russian and English.
+                                    State manager - Redux.
+                                </p>                                        
+                            </div>  
+                        </div>
+                    </div>
+                </section>
+            </div>            
+        </main>        
+        <footer class="portfolio-page__footer">
+            <p>
+                Skorobogatov Stanislav.<br>
+                I look forward to productive cooperation !
+            </p>
+        </footer>
+    </body>
 </html>
