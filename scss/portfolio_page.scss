@@ -51,7 +51,7 @@ footer{
 
 .about{
     display: grid;
-    grid-template-columns: minmax(200px, 350px) 1fr;
+    grid-template-columns: 350px 1fr;
     grid-template-rows: auto 1fr;
     padding: 2rem;
     background-color: azure; 
@@ -188,3 +188,4 @@ footer{
     }
 }
 
+@import "./adaptive";
