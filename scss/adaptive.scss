@@ -218,12 +218,12 @@
     }    
   }
   .skills{
-    font-size: 1.5rem;    
+    font-size: 1rem;    
     background-color: azure;
     padding: 1.5rem;
     &__title{
         flex-basis: 100%;
-        font-size: 3rem;
+        font-size: 1.7rem;
         text-decoration: underline black;
     }
     &__item{
@@ -235,8 +235,14 @@
         }
     }
   }
+  .projects__title{
+    font-size: 1.7rem;
+  }
   .projects__item-description{
     font-size: 1rem;
+  }
+  .projects__item-title{
+    font-size: 1.5rem;
   }
 }
 /* Custom, iPhone Retina */
@@ -267,7 +273,7 @@
     background-color: azure;
     padding: 1rem;
     &__title{        
-        font-size: 3rem;        
+        font-size: 1.5rem;        
     }
     &__item{
         flex-basis: 40%;        
@@ -283,7 +289,7 @@
     margin-top: 1rem;    
     padding: 1rem;
     &__title{
-        font-size: 3rem;        
+        font-size: 1.5rem;        
     }
     &__list{
         margin-top: 1rem;
@@ -296,14 +302,17 @@
     margin-top: 1rem;
     padding: 1rem;        
     &__title{
-        font-size: 3rem;                        
+        font-size: 1.5rem;                        
     }
     &__wrapper{
         margin-top: 1rem;
     }
-    &__item{        
+    &__item{
+        &-title{
+          font-size: 1rem;
+        }        
         &-description{            
-            font-size: 1rem;            
+            font-size: .7rem;            
         }
     }
   }
